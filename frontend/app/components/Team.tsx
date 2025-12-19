@@ -17,7 +17,7 @@ const team: TeamMember[] = [
 
     {
     name: "Lillian Mshai Kalela",
-    role: "Global Co-founder & Growth Lead-Partnerships and Development",
+    role: " Co-founder & Global Growth Lead, Partnerships & Development",
     image: Lily,
   },
   {
@@ -28,7 +28,7 @@ const team: TeamMember[] = [
   
   {
     name: "Godson Cirhuza Katoto",
-    role: "Global Co-founder & Growth Lead -Strategy and Operations",
+    role: " Co-founder & Global Growth Lead, Strategy & Operations",
     image: Godson,
   },
 ];
