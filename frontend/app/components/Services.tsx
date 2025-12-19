@@ -135,20 +135,7 @@ export default function ServicesPage() {
                 {service.description}
               </p>
 
-              {/* Learn More */}
-              <div
-                className={`mt-4 flex items-center gap-2 text-sm font-medium ${
-                  service.featured
-                    ? "text-purple-400"
-                    : "text-gray-800 dark:text-gray-200"
-                }`}
-              >
-                <span>Learn more</span>
-                <ArrowRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-1"
-                />
-              </div>
+              
             </motion.div>
           </Link>
         ))}
