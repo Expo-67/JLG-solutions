@@ -8,7 +8,7 @@ import teamPhoto from "../assets/build.jpeg"; // full team image
 
 import Lily from "../assets/lily6.jpeg";
 import James from "../assets/compressed.jpg";
-import Godson from "../assets/godson3.jpeg";
+import Godson from "../assets/godson2.jpeg";
 
 type Founder = {
   name: string;
