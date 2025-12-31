@@ -9,7 +9,7 @@ export default function ContactPage() {
         {/* LEFT: CONTACT INFO */}
         <div>
           <h1 className="text-4xl font-bold text-gray-900">
-            Contact Us
+            Reach out to us
           </h1>
 
           <p className="mt-4 max-w-md text-gray-600">
@@ -17,11 +17,10 @@ export default function ContactPage() {
             can help your business grow.
           </p>
 
-          {/* Contact Details */}
           <div className="mt-6 space-y-4">
             <div className="flex items-center gap-3 text-gray-800">
               <Mail size={18} />
-              <span>jlgsolutions@gmail.com</span>
+              <span>jlgsolutions25@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-3 text-gray-800">
@@ -29,9 +28,6 @@ export default function ContactPage() {
               <span>+254 728 774 289</span>
             </div>
           </div>
-
-          
-          
         </div>
 
         {/* RIGHT: FORM */}
@@ -43,40 +39,59 @@ export default function ContactPage() {
             You can reach us anytime
           </p>
 
-          <form className="mt-6 space-y-4">
+          <form
+            action="https://formsubmit.co/jlgsolutions25@gmail.com"
+            method="POST"
+            className="mt-6 space-y-4"
+          >
+            {/* Hidden Config */}
+            <input type="hidden" name="_subject" value="New Contact Form Submission - JLG Solutions" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://jlgsolutions.com/thank-you" />
+
             {/* Name */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <input
                 type="text"
+                name="First Name"
                 placeholder="First name"
-                className="rounded-full border px-4 py-3 text-sm outline-none focus:border-purple-500"
+                required
+                className="rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
               />
               <input
                 type="text"
+                name="Last Name"
                 placeholder="Last name"
-                className="rounded-full border px-4 py-3 text-sm outline-none focus:border-purple-500"
+                required
+                className="rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
               />
             </div>
 
             {/* Email */}
             <input
               type="email"
+              name="Email"
               placeholder="Your email"
-              className="w-full rounded-full border px-4 py-3 text-sm outline-none focus:border-purple-500"
+              required
+              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
             />
 
             {/* Phone */}
             <input
               type="tel"
+              name="Phone"
               placeholder="Phone number"
-              className="w-full rounded-full border px-4 py-3 text-sm outline-none focus:border-purple-500"
+              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
             />
 
             {/* Message */}
             <textarea
+              name="Message"
               placeholder="How can we help?"
               rows={4}
-              className="w-full resize-none rounded-2xl border px-4 py-3 text-sm outline-none focus:border-purple-500"
+              required
+              className="w-full resize-none rounded-2xl border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
             />
 
             {/* Submit */}
@@ -86,8 +101,6 @@ export default function ContactPage() {
             >
               Submit
             </button>
-
-            
           </form>
         </div>
       </div>

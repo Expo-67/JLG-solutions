@@ -37,9 +37,9 @@ export default function Hero(): React.ReactElement {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-8">
-            <span className="block">Building Digital</span>
+            <span className="block">Smart Solutions,</span>
             <span className="block mt-2 bg-gradient-to-r from-white via-accent to-primary bg-clip-text text-transparent">
-              Solutions That Scale
+              Everyday
             </span>
           </h1>
 
@@ -48,38 +48,42 @@ export default function Hero(): React.ReactElement {
 
           {/* Mission */}
           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed font-light mb-12">
-            JLG Solutions bridges the gap between business challenges and
-            technological innovation — delivering scalable, future-ready
-            digital products.
+            JLG Solutions delivers technology built for real people and real needs. We focus on 
+            solutions that are simple, useful and impactful everyday.
           </p>
 
           {/* CTA */}
           <div className="flex justify-center mb-16">
-            <button className="group relative bg-gradient-to-r from-primary to-primary-dark text-white px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
-              <span className="relative z-10 flex items-center gap-3">
-                Contact Us
-                <svg
-                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-purple-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-            </button>
+                    <a
+          href="#contact"
+          className="group relative inline-block bg-gradient-to-r from-primary to-primary-dark text-white px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105"
+        >
+          <span className="relative z-10 flex items-center gap-3">
+            Connect with Us
+            <svg
+              className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </span>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-purple-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+        </a>
+
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             
-            <Stat value="5+" label="Startups & Companies" />
+            <Stat value="3" label="Our Impact" />
            
           </div>
         </div>
@@ -100,7 +104,6 @@ export default function Hero(): React.ReactElement {
   return <Success />;
 }`}
       </div>
-
       <div className="absolute bottom-20 right-10 opacity-20 text-white font-mono text-sm hidden lg:block">
         {`const JLG solutions = {
   innovation: "Cutting-edge solutions",
