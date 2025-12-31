@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // Import logos
-// import StramcoLogo from "../assets/stramco - Copy.png";
+import StramcoLogo from "../assets/stramco - Copy.png";
 import RaponiLogo from "../assets/raponi.jpg";
 // import AccountabilityBuddiesLogo from "../assets/Accountabilty.jpg";
 // import GenCodeLogo from "../assets/newgen.jpeg"; // Make sure you have this logo in assets
@@ -19,15 +19,15 @@ type ImpactItem = {
 };
 
 const impacts: ImpactItem[] = [
-//   {
-//   name: "Stramco",
-//   logo: StramcoLogo,
-//   description:
-//     "A web application for an HR consultancy that publishes job openings and allows candidates to apply online, with a dedicated admin dashboard for managing listings.",
-//   impact:
-//     "Simplified the recruitment process, improved job visibility, and enabled efficient management of job postings and applications.",
-//   link: "https://stramcolimited.com",
-// },
+  {
+  name: "Stramco",
+  logo: StramcoLogo,
+  description:
+    "A web application for an HR consultancy that publishes job openings and allows candidates to apply online, with a dedicated admin dashboard for managing listings.",
+  impact:
+    "Simplified the recruitment process, improved job visibility, and enabled efficient management of job postings and applications.",
+  link: "https://stramcolimited.com",
+},
 
   {
     name: "Raponi",
