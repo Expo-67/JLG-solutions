@@ -38,7 +38,7 @@ export default function Hero(): React.ReactElement {
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-8">
             <span className="block">Smart Solutions,</span>
-            <span className="block mt-2 bg-gradient-to-r from-white via-accent to-primary bg-clip-text text-transparent">
+            <span className="block mt-3 bg-gradient-to-r from-white via-accent to-primary bg-clip-text text-transparent">
               Everyday
             </span>
           </h1>

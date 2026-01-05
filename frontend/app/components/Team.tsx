@@ -1,44 +1,63 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Linkedin, Instagram, Mail } from "lucide-react";
 
-import Lily from "../assets/lily6.jpeg";
+import Lily from "../assets/lily4.jpeg";
 import James from "../assets/compressed.jpg";
-import Godson from "../assets/godson2.jpeg";
+import Godson from "../assets/g44.jpeg";
 
-type TeamMember = {
+type Founder = {
   name: string;
   role: string;
   description: string;
   image: StaticImageData;
+  social: {
+    linkedin?: string;
+    instagram?: string;
+    email?: string;
+  };
 };
 
-const team: TeamMember[] = [
+const founders: Founder[] = [
   {
     name: "Lillian Mshai Kalela",
     role: "Co-founder & Global Growth Lead (Partnerships & Development)",
     description:
-      "Lillian leads partnerships, fundraising and global growth, ensuring JLG’s solutions reach the right communities and organizations.",
+      "Lillian leads partnerships, fundraising and global development initiatives, focusing on building relationships that expand impact and unlock long-term growth opportunities.",
     image: Lily,
+    social: {
+      linkedin: "https://www.linkedin.com/in/lillian-kalela-84927543/",
+      instagram: "https://www.instagram.com/lilliankalela/",
+      email: "mailto:mshaikalela@gmail.com",
+    },
   },
   {
     name: "James Kinungi Ndungu",
     role: "Co-founder & Global Tech Lead",
     description:
-      "James leads product architecture and engineering, turning real-world problems into scalable, reliable technology.",
+      "James leads product architecture and engineering, translating real world problems into scalable, reliable technology that works in everyday environments.",
     image: James,
+    social: {
+      linkedin: "https://www.linkedin.com/in/james-ndungu-b406ab248/",
+      instagram: "https://www.instagram.com/james_expo4/",
+      email: "mailto:jamiendungu38@gmail.com",
+    },
   },
   {
     name: "Godson Cirhuza Katoto",
     role: "Co-founder & Global Growth Lead (Strategy & Operations)",
     description:
-      "Godson drives strategy and operations, aligning products with user needs and ensuring smooth execution.",
+      "Godson drives strategy and operations, ensuring ideas move from concept to execution while aligning products with real user and business needs.",
     image: Godson,
+    social: {
+      instagram: "https://www.instagram.com/mrkatoto/",
+      email: "mailto:godsonkatoto@gmail.com",
+      linkedin: "https://www.linkedin.com/mwlite/profile/me?trk=p_mwlite_profile_view-secondary_nav",
+    },
   },
 ];
-
 
 export default function TeamPage() {
   return (
@@ -49,39 +68,75 @@ export default function TeamPage() {
       {/* Header */}
       <div className="mx-auto max-w-5xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-          Our Team 
+          Our Team
         </h1>
-        
       </div>
 
-      {/* Team Grid */}
-      <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-3">
-        {team.map((member) => (
-          <div
-            key={member.name}
-            className="group relative overflow-hidden rounded-3xl bg-black shadow-lg"
-          >
-            {/* Founder Image */}
-            <Image
-              src={member.image}
-              alt={member.name}
-              className="h-[480px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              priority
-            />
+      {/* FOUNDERS */}
+      <div className="px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          
 
-            {/* Overlay */}
-            <div className="absolute inset-x-4 bottom-6 rounded-2xl bg-black/40 p-4 backdrop-blur-md">
-              <h3 className="text-lg font-semibold text-white">
-                {member.name}
-              </h3>
-              <p className="text-sm text-gray-200">{member.role}</p>
-              <div className="mt-2 max-h-20 overflow-y-auto text-xs text-gray-300">
-                {member.description}
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {founders.map((founder) => (
+              <div
+                key={founder.name}
+                className="group overflow-hidden rounded-3xl bg-black"
+              >
+                {/* Image */}
+                <Image
+                  src={founder.image}
+                  alt={founder.name}
+                  className="h-[380px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-white">
+                    {founder.name}
+                  </h3>
+                  <p className="text-sm text-gray-300">{founder.role}</p>
+
+                  <p className="mt-3 text-sm leading-relaxed text-gray-400">
+                    {founder.description}
+                  </p>
+
+                  {/* Social Icons */}
+                  <div className="mt-4 flex gap-4 text-gray-300">
+                    {founder.social.linkedin && (
+                      <Link
+                        href={founder.social.linkedin}
+                        target="_blank"
+                        aria-label={`${founder.name} LinkedIn`}
+                      >
+                        <Linkedin className="h-5 w-5 hover:text-white transition" />
+                      </Link>
+                    )}
+
+                    {founder.social.instagram && (
+                      <Link
+                        href={founder.social.instagram}
+                        target="_blank"
+                        aria-label={`${founder.name} Instagram`}
+                      >
+                        <Instagram className="h-5 w-5 hover:text-white transition" />
+                      </Link>
+                    )}
+
+                    {founder.social.email && (
+                      <Link
+                        href={founder.social.email}
+                        aria-label={`Email ${founder.name}`}
+                      >
+                        <Mail className="h-5 w-5 hover:text-white transition" />
+                      </Link>
+                    )}
+                  </div>
+                </div>
               </div>
-              <ArrowUpRight className="mt-2 h-5 w-5 text-white opacity-80 float-right" />
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Learn More Button */}

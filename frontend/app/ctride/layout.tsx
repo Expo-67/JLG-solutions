@@ -5,11 +5,11 @@ import Footer from '../components/Footer';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Impact | JLG Solutions",
+  title: "C-tride | JLG Solutions",
   description:
-    "Learn more about our impact from JLG Solutions.",
+    "Learn more about Ctride and its impact.",
 };
-const ImpactLayout = ({ children }: { children: React.ReactNode }) => {
+const CtrideLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Header />
@@ -19,4 +19,4 @@ const ImpactLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default ImpactLayout;
+export default CtrideLayout;

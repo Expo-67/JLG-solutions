@@ -6,7 +6,7 @@ import Link from "next/link";
 // Import logos
 import StramcoLogo from "../assets/stramco - Copy.png";
 import RaponiLogo from "../assets/raponi.jpg";
-// import AccountabilityBuddiesLogo from "../assets/Accountabilty.jpg";
+ import AccountabilityBuddiesLogo from "../assets/Accountabilty.jpg";
 // import GenCodeLogo from "../assets/newgen.jpeg"; // Make sure you have this logo in assets
 
 type ImpactItem = {
@@ -20,7 +20,7 @@ type ImpactItem = {
 
 const impacts: ImpactItem[] = [
   {
-  name: "Stramco",
+  name: "Stramco solutions limited",
   logo: StramcoLogo,
   description:
     "A web application for an HR consultancy that publishes job openings and allows candidates to apply online, with a dedicated admin dashboard for managing listings.",
@@ -30,7 +30,7 @@ const impacts: ImpactItem[] = [
 },
 
   {
-    name: "Raponi",
+    name: "Raponi Gardens",
     logo: RaponiLogo,
     description:
       "A landscape architecture portfolio website showcasing clients worked with and completed projects.",
@@ -38,13 +38,13 @@ const impacts: ImpactItem[] = [
       "Enhanced online presence, attracted new clients, and displayed completed projects beautifully.",
     link: "https://raponigardens.com",
   },
-//   {
-//     name: "Accountability Buddies",
-//     logo: AccountabilityBuddiesLogo,
-//     description:
-//       "A web app for posting scholarship opportunities and connecting students to funding options.",
-//     inDevelopment: true,
-//   },
+  {
+    name: "Accountability Buddies",
+    logo: AccountabilityBuddiesLogo,
+    description:
+      "A web app for posting scholarship opportunities and connecting students to funding options.",
+    inDevelopment: true,
+  },
 //   {
 //     name: "Gen Code",
 //     logo: GenCodeLogo,
@@ -105,7 +105,7 @@ export default function ImpactPage() {
             <div className="mt-6 flex justify-center">
               {item.inDevelopment ? (
                 <span className="rounded-full bg-yellow-400 px-6 py-2 text-white font-semibold shadow-md">
-                  Coming Soon
+                  In Development
                 </span>
               ) : (
                 <Link

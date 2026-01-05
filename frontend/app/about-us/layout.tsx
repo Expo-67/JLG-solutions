@@ -1,16 +1,23 @@
-"use client";
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import type { Metadata } from "next";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-const AboutUsPageLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: "Our Story | JLG Solutions",
+  description:
+    "Learn more about JLG Solutions and the people building practical technology for real-world impact.",
 };
 
-export default AboutUsPageLayout;
+export default function AboutUsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+}

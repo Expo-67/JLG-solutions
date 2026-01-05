@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 import logoService from "../assets/brand2.png";
 import backgroundService from "../assets/servicemoti.png";
 import logoHealth from "../assets/brand2.png";
-import backgroundHealth from "../assets/serv m2.png";
+import backgroundHealth from "../assets/come_up_with_a_backg-225172.png";
 
 export default function Products() {
   return (
@@ -42,7 +42,7 @@ export default function Products() {
  A wellness solution that improves participation and morale, and is easy to roll out."
             background={backgroundHealth}
             logo={logoHealth}
-            href="#contact"
+            href="/ctride"
           />
           
         </div>
