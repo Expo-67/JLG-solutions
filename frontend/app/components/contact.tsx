@@ -20,7 +20,7 @@ export default function ContactPage() {
           <div className="mt-6 space-y-4">
             <div className="flex items-center gap-3 text-gray-800">
               <Mail size={18} />
-              <span>jlgsolutions25@gmail.com</span>
+              <span>info@jlgsolutionsllp.com</span>
             </div>
 
             <div className="flex items-center gap-3 text-gray-800">
