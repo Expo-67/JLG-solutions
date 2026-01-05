@@ -4,9 +4,9 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { Linkedin, Instagram, Mail } from "lucide-react";
 
-import Lily from "../assets/lily4.jpeg";
+import Lily from "../assets/lily6.jpeg";
 import James from "../assets/compressed.jpg";
-import Godson from "../assets/g44.jpeg";
+import Godson from "../assets/godson2.jpeg";
 
 type Founder = {
   name: string;
