@@ -4,7 +4,10 @@ import { Mail, Phone } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <section id="contact" className="min-h-screen bg-[#EEF4FF] px-6 py-20">
+    <section
+      id="contact"
+      className="min-h-screen bg-[#EEF4FF] px-6 py-20"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 md:grid-cols-2">
         {/* LEFT: CONTACT INFO */}
         <div>
@@ -12,18 +15,18 @@ export default function ContactPage() {
             Reach out to us
           </h1>
 
-          <p className="mt-4 max-w-md text-gray-600">
+          <p className="mt-4 max-w-md text-gray-700">
             Email, call, or complete the form to learn how our solutions
             can help your business grow.
           </p>
 
           <div className="mt-6 space-y-4">
-            <div className="flex items-center gap-3 text-gray-800">
+            <div className="flex items-center gap-3 text-gray-900">
               <Mail size={18} />
               <span>info@jlgsolutionsllp.com</span>
             </div>
 
-            <div className="flex items-center gap-3 text-gray-800">
+            <div className="flex items-center gap-3 text-gray-900">
               <Phone size={18} />
               <span>+254 728 774 289</span>
             </div>
@@ -35,6 +38,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-semibold text-gray-900">
             Get in touch
           </h2>
+
           <p className="mt-1 text-sm text-gray-600">
             You can reach us anytime
           </p>
@@ -45,26 +49,35 @@ export default function ContactPage() {
             className="mt-6 space-y-4"
           >
             {/* Hidden Config */}
-            <input type="hidden" name="_subject" value="New Contact Form Submission - JLG Solutions" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission - JLG Solutions"
+            />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://jlgsolutions.com/thank-you" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://jlgsolutions.com/thank-you"
+            />
 
-            {/* Name */}
+            {/* Names */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <input
                 type="text"
                 name="First Name"
                 placeholder="First name"
                 required
-                className="rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
+                className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:placeholder:text-gray-400"
               />
+
               <input
                 type="text"
                 name="Last Name"
                 placeholder="Last name"
                 required
-                className="rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
+                className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:placeholder:text-gray-400"
               />
             </div>
 
@@ -74,7 +87,7 @@ export default function ContactPage() {
               name="Email"
               placeholder="Your email"
               required
-              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
+              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:placeholder:text-gray-400"
             />
 
             {/* Phone */}
@@ -82,7 +95,7 @@ export default function ContactPage() {
               type="tel"
               name="Phone"
               placeholder="Phone number"
-              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
+              className="w-full rounded-full border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:placeholder:text-gray-400"
             />
 
             {/* Message */}
@@ -91,13 +104,13 @@ export default function ContactPage() {
               placeholder="How can we help?"
               rows={4}
               required
-              className="w-full resize-none rounded-2xl border border-gray-300 px-4 py-3 text-sm outline-none focus:border-purple-500"
+              className="w-full resize-none rounded-2xl border border-gray-300 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:placeholder:text-gray-400"
             />
 
             {/* Submit */}
             <button
               type="submit"
-              className="w-full rounded-full bg-purple-600 py-3 text-sm font-medium text-white transition hover:bg-purple-700"
+              className="w-full rounded-full bg-purple-600 py-3 text-sm font-medium text-white transition hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-300"
             >
               Submit
             </button>
