@@ -5,6 +5,7 @@ import Team from "./components/Team"
 import Contact from "./components/contact"
 import About from "./components/About"
 import Products from "./components/Products";
+
 export default function Home() {
   return (
     <main className="min-h-screen font-sans">
