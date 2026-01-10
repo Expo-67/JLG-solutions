@@ -28,7 +28,7 @@ export default function Products() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <ProductCard
             title="Service Moti"
-            description="Service-Moti is an application that helps garage owners digitally manage their operations. It enables garage registration, client and mechanic management, digital service records, and automated service reminders—improving efficiency, customer communication, and service reliability."
+            description="In development."
             background={backgroundService}
             logo={logoService}
             href="/servicemoti"
@@ -37,9 +37,7 @@ export default function Products() {
    
           <ProductCard
             title="Ctirde"
-            description="A wellness platform responsible for employee wellbeing programs, benefits, and engagement.
-
- A wellness solution that improves participation and morale, and is easy to roll out."
+            description="In development."
             background={backgroundHealth}
             logo={logoHealth}
             href="/ctride"

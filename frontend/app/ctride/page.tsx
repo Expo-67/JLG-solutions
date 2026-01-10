@@ -26,7 +26,7 @@ export default function CtridePage() {
         <p className="text-lg text-gray-600 leading-relaxed">
           In development.
           <br />
-          Stay tuned.
+         
         </p>
       </div>
     </section>
