@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../assets/brand2.png";
+import logo from "../assets/logo.jpeg";
 
 export default function CtridePage() {
   return (

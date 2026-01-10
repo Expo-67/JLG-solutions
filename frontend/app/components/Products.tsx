@@ -4,10 +4,10 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-import logoService from "../assets/brand2.png";
-import backgroundService from "../assets/servicemoti.png";
-import logoHealth from "../assets/brand2.png";
-import backgroundHealth from "../assets/come_up_with_a_backg-225172.png";
+import logoService from "../assets/logo.jpeg";
+import backgroundService from "../assets/logo.jpeg";
+import logoHealth from "../assets/logo.jpeg";
+import backgroundHealth from "../assets/logo.jpeg";
 
 export default function Products() {
   return (
